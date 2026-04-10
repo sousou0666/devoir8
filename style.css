@@ -1,0 +1,281 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: burlywood;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+nav a {
+    color: black;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+nav a:active {
+    color: darkblue;
+}
+
+/* ================= HERO ================= */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    gap: 40px;
+}
+
+/* texte */
+.hero-text h1 {
+    font-size: 32px;
+}
+
+.hero-text p {
+    margin: 10px 0;
+    color: #333;
+}
+
+/* bouton avec ANIMATION */
+.hero-text button {
+    padding: 12px 20px;
+    background: pink;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-text button:hover {
+    transform: scale(1.1);
+    background: hotpink;
+}
+
+/* image HERO (IMPORTANT) */
+.hero-image img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* ================= FEATURES ================= */
+.features {
+    text-align: center;
+    padding: 50px;
+}
+
+.content {
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    width: 220px;
+    transition: 0.3s;
+}
+
+/* animation cards */
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+body {
+    background-color: blue;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-image img {
+        width: 180px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* ================= PRODUIT ================= */
+
+.product {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* conteneur */
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+
+    /* animation entrée */
+    animation: fadeUp 1s ease;
+}
+
+/* IMAGE */
+.product-image img {
+    width: 280px;
+    height: auto;
+    border-radius: 15px;
+
+    /* animation hover */
+    transition: 0.4s ease;
+}
+
+/* zoom image au hover */
+.product-image img:hover {
+    transform: scale(1.05);
+}
+
+/* TEXTE */
+.product-text {
+    max-width: 400px;
+    text-align: left;
+
+    animation: fadeUp 1.2s ease;
+}
+
+.product-text h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.product-text p {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* prix */
+.price {
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+/* BOUTON */
+.product-text button {
+    padding: 12px 20px;
+    background: pink;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+/* animation bouton */
+.product-text button:hover {
+    transform: scale(1.1);
+    background: hotpink;
+}
+
+/* ================= ANIMATIONS ================= */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .product-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .product-text {
+        text-align: center;
+    }
+
+    .product-image img {
+        width: 200px;
+    }
+}
+.features {
+    text-align: center;
+    padding: 50px;
+}
+
+.content {
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background:purple;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+.content {
+    margin-bottom: 30px;
+}
+.footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
